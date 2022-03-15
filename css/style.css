@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  /*empezar la primera letra de la palabra en mayuscula */
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  /* transicion de los hover, tambien para la transicion en responsivo */
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #6a7964;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .6% 3%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__top .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top .user i {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-right: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top .user a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding-right: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top .user p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top .envios p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header__top .redes__sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__top .redes__sociales p {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.header__top .redes__sociales a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 0 .7rem;
+}
+
+.header__fixed {
+  background: #ffffff;
+}
+
+.header__fixed .header__fixed__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+  z-index: 100;
+}
+
+.header__fixed .header__fixed__items p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header__fixed .navbar a {
+  display: inline-block;
+  /*centra los links como aling item*/
+  color: #030303;
+  font-size: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+.header__fixed .navbar a:hover {
+  background: #6a7964;
+  color: #ffffff;
+}
+
+#menu-btn {
+  font-size: 3rem;
+  color: #030303;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding: 7rem;
+  }
+  .header__top .user {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    /*rotar la X */
+  }
+  #menu-btn.fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #6a7964;
+    /* desaparece menu responsivo */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    /* aparece menu responsivo */
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1.2rem 1.5rem;
+  }
+  .header .header__fixed__items {
+    padding: 2% 9%;
+  }
+  .header__top {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
