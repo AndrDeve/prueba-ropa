@@ -20,6 +20,7 @@ var swiper = new Swiper(".home-slider", {
     loop:true,
     autoplay: {
       delay: 3500,
+      disableOnInteraction: false,
     },
     centeredSlides:true,
     pagination: {
