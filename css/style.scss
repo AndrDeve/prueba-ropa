@@ -126,7 +126,36 @@ html{
   display: none;
 }
 
-
+//slider
+.home{
+    padding: 0;
+    margin-top: 10.5rem;
+  
+    .slide{
+      min-height: 70vh;
+      background-size: cover !important; //se centra "casi" imagen
+      background-position: center !important; // busca el centro de la imagen "abdomen"
+      padding: 2rem 9%; // se mueve texto
+      display: flex;       // centra el texto en pantalla "abdomen" 
+      align-items: center; // centra el texto en pantalla "abdomen"
+  
+      .content{
+        width: 60rem;
+  
+        span{
+          font-size: 2rem;
+          color: $verde-oliva;
+          display: block;
+        }
+  
+        h3{
+          font-size: 5rem;
+          color: white;
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
 
 
 
@@ -159,7 +188,7 @@ html{
       } 
     
       .header{
-    
+        z-index: 300;
         .navbar{
           position: absolute;
           top:99%; left:0; right:0;
@@ -191,17 +220,11 @@ html{
         align-items: center;
         flex-direction: column;
     }
+
+    .home{
+        margin-top: 11.5rem;
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
