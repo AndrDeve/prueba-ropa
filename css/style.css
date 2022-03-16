@@ -147,13 +147,30 @@ html {
   display: none;
 }
 
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, #6a7964 93%, transparent 90%);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .home {
   padding: 0;
   margin-top: 10.5rem;
 }
 
 .home .slide {
-  min-height: 52.4rem;
+  min-height: 85vh;
   background-size: cover !important;
   background-position: center !important;
   padding: 2rem 9%;
@@ -170,15 +187,27 @@ html {
 }
 
 .home .slide .content span {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #6a7964;
+  font-weight: bold;
   display: block;
 }
 
 .home .slide .content h3 {
   font-size: 5rem;
-  color: white;
+  color: #ffffff;
   padding: 1rem 0;
+}
+
+.swiper-pagination-bullet {
+  height: 2rem;
+  width: 2rem;
+  background: #ffffff;
+  border-radius: 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ffffff;
 }
 
 @media (max-width: 991px) {
@@ -188,6 +217,15 @@ html {
   }
   .header__top .user {
     display: none;
+  }
+  .home .slide {
+    padding: 2rem 5%;
+  }
+  .home .slide .content {
+    width: 50rem;
+  }
+  .home .slide .content h3 {
+    font-size: 4rem;
   }
 }
 
