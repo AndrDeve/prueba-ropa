@@ -28,6 +28,7 @@ html{
     right: 0;
     left: 0;
     background: $verde-oliva;
+    z-index: 4000;
 }
 
 .header__top{
@@ -132,7 +133,7 @@ html{
     margin-top: 10.5rem;
   
     .slide{
-      min-height: 70vh;
+      min-height: 52.4rem;
       background-size: cover !important; //se centra "casi" imagen
       background-position: center !important; // busca el centro de la imagen "abdomen"
       padding: 2rem 9%; // se mueve texto
