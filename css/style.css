@@ -355,7 +355,7 @@ hr {
 
 @media (max-width: 450px) {
   .items {
-    padding: 5% 1%;
+    padding: 5% 1.5%;
   }
   html {
     font-size: 50%;
