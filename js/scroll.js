@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.header__fixed__items', { delay: 200 });
+// ScrollReveal().reveal('.header__fixed__items', { delay: 200 });
 
 
 window.sr = ScrollReveal();
