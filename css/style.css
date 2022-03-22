@@ -22,6 +22,11 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  padding: 5rem 6%;
+  /*con este le damos la misma medida a todas las secciones*/
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -220,7 +225,6 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5% 10%;
   z-index: 100;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -256,10 +260,78 @@ html {
 }
 
 hr {
+  width: 93%;
   height: .1rem;
-  width: 94%;
   margin: 0 auto;
   background-color: #a5a5a5;
+}
+
+.coleccion h2 {
+  font-size: 3rem;
+  margin: 4rem 0;
+  color: #6a7964;
+  font-weight: 600;
+}
+
+.coleccion .coleccion-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.coleccion .coleccion-items .slide {
+  min-height: 70vh;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 5rem 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coleccion .coleccion-items .content h3 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.coleccion .coleccion-items .content span {
+  font-size: 1.5rem;
+  color: #878787;
+}
+
+.coleccion .coleccion-items .content .btn-margen {
+  margin-top: 16rem;
+}
+
+.coleccion .coleccion-items .content .modify {
+  color: #ffffff;
+}
+
+.coleccion .coleccion-items .img1 {
+  width: 60%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.coleccion .coleccion-items .img1:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+}
+
+.coleccion .coleccion-items .img2 {
+  width: 35%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.coleccion .coleccion-items .img2:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
 }
 
 @media (max-width: 1075px) {
@@ -339,6 +411,22 @@ hr {
   .home {
     margin-top: 11.5rem;
   }
+  .coleccion .coleccion-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .coleccion .coleccion-items .img1 {
+    margin-bottom: 3rem;
+  }
+  .coleccion .coleccion-items .slide {
+    min-height: 90vh;
+    width: 100%;
+  }
+  .coleccion .coleccion-items .slide .content .btn-margen {
+    margin-top: 25rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -359,6 +447,9 @@ hr {
   }
   html {
     font-size: 50%;
+  }
+  .coleccion .coleccion-items .slide .content .btn-margen {
+    margin-top: 30rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

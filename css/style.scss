@@ -22,6 +22,10 @@ html{
     overflow-x: hidden;
 }
 
+section{
+  padding:5rem 6%; /*con este le damos la misma medida a todas las secciones*/
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -194,7 +198,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 10%;
     z-index: 100;
     flex-wrap: wrap;
 
@@ -224,13 +227,80 @@ html{
     }
  }
 
- hr {
+ hr{
+  width: 93%;
   height: .1rem;
-  width: 94%;
   margin: 0 auto;
   background-color: rgb(165, 165, 165);
 }
 
+//colecciones
+.coleccion{
+  
+
+  h2{
+    font-size: 3rem;  
+    margin:4rem 0;
+    color: $verde-oliva;
+    font-weight: 600;
+  }
+
+  .coleccion-items{
+    display: flex;
+    justify-content: space-between;
+
+    .slide{
+    min-height: 70vh;
+    background-size: cover !important; //se centra "casi" imagen
+    background-position: center !important; // busca el centro de la imagen "abdomen"
+    padding: 5rem 3%; // se mueve texto
+    display: flex;       // centra el texto en pantalla "abdomen" 
+    
+    }
+
+    .content{
+      
+      
+      h3{
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      span{
+        font-size: 1.5rem;
+        color: rgb(135, 135, 135);
+      }
+
+      .btn-margen{
+        margin-top: 16rem;
+      }
+
+      .modify{
+        color: $white;
+      }
+    }
+
+    .img1{
+      width: 60%;
+      transition: all 500ms ease;
+
+      &:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+    }
+
+    .img2{
+      width:35%;
+      transition: all 500ms ease;
+
+      &:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 
 
@@ -314,6 +384,28 @@ html{
     .home{
         margin-top: 11.5rem;
     }
+
+    .coleccion{
+
+      .coleccion-items{
+        flex-direction: column;
+
+        .img1{
+          margin-bottom: 3rem;
+        }
+
+        .slide{
+          min-height: 90vh;
+          width: 100%;
+
+          .content{
+            .btn-margen{
+              margin-top: 25rem;
+            }
+          }
+        }
+      }
+    }
 }
 
 @media (max-width:550px){
@@ -341,5 +433,19 @@ html{
     html{
       font-size: 50%;
     }
-  
+    
+    .coleccion{
+
+      .coleccion-items{
+
+        .slide{
+          
+          .content{
+            .btn-margen{
+              margin-top: 30rem;
+            }
+          }
+        }
+      }
+    }
   }
