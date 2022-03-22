@@ -250,7 +250,7 @@ section{
     justify-content: space-between;
 
     .slide{
-    min-height: 70vh;
+    min-height: 85vh;
     background-size: cover !important; //se centra "casi" imagen
     background-position: center !important; // busca el centro de la imagen "abdomen"
     padding: 5rem 3%; // se mueve texto
@@ -395,7 +395,6 @@ section{
         }
 
         .slide{
-          min-height: 90vh;
           width: 100%;
         }
       }
@@ -426,5 +425,19 @@ section{
 
     html{
       font-size: 50%;
+    }
+
+    .coleccion{
+
+      .coleccion-items{
+
+        .img1{
+          min-height: 40vh;
+        }
+
+        .img2{
+          min-height: 70vh;
+        }
+      }
     }
   }
