@@ -271,9 +271,9 @@ section{
         color: rgb(135, 135, 135);
       }
 
-      .btn-margen{
-        margin-top: 16rem;
-      }
+      // .btn-margen{
+      //   margin-top: 16rem;
+      // }
 
       .modify{
         color: $white;
@@ -397,12 +397,6 @@ section{
         .slide{
           min-height: 90vh;
           width: 100%;
-
-          .content{
-            .btn-margen{
-              margin-top: 25rem;
-            }
-          }
         }
       }
     }

@@ -302,10 +302,6 @@ hr {
   color: #878787;
 }
 
-.coleccion .coleccion-items .content .btn-margen {
-  margin-top: 16rem;
-}
-
 .coleccion .coleccion-items .content .modify {
   color: #ffffff;
 }
@@ -423,9 +419,6 @@ hr {
   .coleccion .coleccion-items .slide {
     min-height: 90vh;
     width: 100%;
-  }
-  .coleccion .coleccion-items .slide .content .btn-margen {
-    margin-top: 25rem;
   }
 }
 
