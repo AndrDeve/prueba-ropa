@@ -348,26 +348,72 @@ hr {
       flex-wrap: wrap;
 }
 
-.articulos-mas-vendidos .articulos-items .item {
+.articulos-mas-vendidos .articulos-items .itemm {
   text-align: center;
-  margin: 0 auto;
 }
 
-.articulos-mas-vendidos .articulos-items .item img {
-  height: 27.5rem;
-}
-
-.articulos-mas-vendidos .articulos-items .item p {
+.articulos-mas-vendidos .articulos-items .itemm p {
   color: #030303;
   margin: 1.5rem 0 .5rem 0;
   font-size: 2rem;
   font-weight: 600;
 }
 
-.articulos-mas-vendidos .articulos-items .item span {
+.articulos-mas-vendidos .articulos-items .itemm span {
   color: #878787;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
+}
+
+.articulos-mas-vendidos .articulos-items .item {
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.articulos-mas-vendidos .articulos-items .item:hover .container__item__hover {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.articulos-mas-vendidos .articulos-items .item .container__item__hover {
+  position: absolute;
+  background: #1515158c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.articulos-mas-vendidos .articulos-items .item .container__item__hover span {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.articulos-mas-vendidos .articulos-items .item img {
+  height: 27.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1075px) {
@@ -471,7 +517,10 @@ hr {
   .items .item-items .item-textos {
     font-size: 1.5rem;
   }
-  .articulos-mas-vendidos .articulos-items .item img {
+  .articulos-mas-vendidos .articulos-items .itemm {
+    margin: 0 auto;
+  }
+  .articulos-mas-vendidos .articulos-items .itemm img {
     width: 100%;
     height: 80%;
   }
