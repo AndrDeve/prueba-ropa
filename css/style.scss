@@ -302,6 +302,45 @@ section{
   }
 }
 
+//artículos más vendidos
+.articulos-mas-vendidos{
+
+  h2{
+    font-size: 3rem;  
+    margin:0 0 3rem 0;
+    color: $verde-oliva;
+    font-weight: 600;
+  }
+
+  .articulos-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .item{
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+
+      img{
+        height: 27.5rem;
+      }
+      
+      p{
+        color: $black;
+        margin: 1.5rem 0 .5rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      span{
+        color: rgb(135, 135, 135);
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
 
 
 // media queries
@@ -412,6 +451,20 @@ section{
 
       .item-textos{
         font-size: 1.5rem;
+      }
+    }
+  }
+
+  .articulos-mas-vendidos{
+
+    .articulos-items{
+
+      .item{
+
+        img{
+          width: 45rem;
+          height: 45rem;
+        }
       }
     }
   }
